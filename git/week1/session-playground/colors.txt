@@ -1,2 +1,8 @@
 Aqua , Black
 Magenta
+Aqua
+Magenta
+RED
+
+git pull origin git-week1/exercise-4 --no-rebase
+:To accept both changes
