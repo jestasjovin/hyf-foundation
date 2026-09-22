@@ -6,3 +6,4 @@ RED
 
 git pull origin git-week1/exercise-4 --no-rebase
 :To accept both changes
+: it sync two commits one for fixig error and the other for the work itslf
