@@ -1,0 +1,1047 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  overflow: hidden;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  background:
+    linear-gradient(
+      180deg,
+      #ccecff 0%,
+      #f8e8b0 42%,
+      #cddf8a 100%
+    );
+}
+
+
+/* ==============================
+   MAIN PAGE LAYOUT
+============================== */
+
+.page-layout {
+  position: relative;
+  z-index: 10;
+
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+
+  padding:
+    40px
+    5vw;
+}
+
+
+/* ==============================
+   CARD
+============================== */
+
+.card {
+  width: min(390px, 88vw);
+
+  padding:
+    26px
+    22px;
+
+  border:
+    1px solid
+    rgba(
+      255,
+      255,
+      255,
+      0.45
+    );
+
+  border-radius:
+    24px;
+
+  background:
+    rgba(
+      255,
+      253,
+      245,
+      0.72
+    );
+
+  backdrop-filter:
+    blur(10px);
+
+  -webkit-backdrop-filter:
+    blur(10px);
+
+  box-shadow:
+    0 20px 50px
+    rgba(
+      0,
+      0,
+      0,
+      0.16
+    );
+}
+
+
+/* ==============================
+   CARD CONTENT
+============================== */
+
+.badge {
+  display:
+    inline-flex;
+
+  align-items:
+    center;
+
+  margin-bottom:
+    12px;
+
+  padding:
+    6px
+    12px;
+
+  border-radius:
+    999px;
+
+  background:
+    rgba(
+      234,
+      241,
+      213,
+      0.8
+    );
+
+  color:
+    #51633b;
+
+  font-size:
+    0.74rem;
+
+  font-weight:
+    bold;
+}
+
+h1 {
+  margin:
+    0 0 10px;
+
+  text-align:
+    left;
+
+  color:
+    #405429;
+
+  font-size:
+    1.85rem;
+
+  line-height:
+    1.1;
+}
+
+p {
+  margin:
+    0 0 18px;
+
+  color:
+    blue;
+
+  font-size:
+    0.94rem;
+
+  line-height:
+    1.55;
+}
+
+
+/* ==============================
+   CHECKLIST
+============================== */
+
+.checklist {
+  display:
+    flex;
+
+  flex-direction:
+    column;
+
+  gap:
+    9px;
+
+  margin:
+    0;
+
+  padding:
+    0;
+
+  list-style:
+    none;
+}
+
+.checklist li {
+  display:
+    grid;
+
+  grid-template-columns:
+    42px
+    1fr;
+
+  align-items:
+    center;
+
+  gap:
+    10px;
+
+  padding:
+    11px;
+
+  border-radius:
+    14px;
+
+  background:
+    rgba(
+      242,
+      246,
+      231,
+      0.8
+    );
+
+  border:
+    1px solid
+    rgba(
+      75,
+      96,
+      44,
+      0.08
+    );
+
+  font-weight:
+    bold;
+}
+
+.item-icon {
+  width:
+    42px;
+
+  height:
+    42px;
+
+  display:
+    grid;
+
+  place-items:
+    center;
+
+  border-radius:
+    12px;
+
+  background:
+    #dfe8c7;
+
+  font-size:
+    1.2rem;
+}
+
+.item-title {
+  display:
+    block;
+
+  margin-bottom:
+    2px;
+
+  color:
+    #32421f;
+
+  font-size:
+    0.92rem;
+}
+
+.item-text {
+  display:
+    block;
+
+  color:
+    #707866;
+
+  font-size:
+    0.76rem;
+
+  line-height:
+    1.35;
+
+  font-weight:
+    normal;
+}
+
+.footer-message {
+  margin-top:
+    15px;
+
+  color:
+    #627150;
+
+  font-size:
+    0.76rem;
+}
+
+
+/* ==============================
+   SAFARI WORLD
+============================== */
+
+.safari-world {
+  position:
+    fixed;
+
+  inset:
+    0;
+
+  z-index:
+    0;
+
+  overflow:
+    hidden;
+
+  pointer-events:
+    none;
+}
+
+
+/* ==============================
+   SUN
+============================== */
+
+.sun {
+  position:
+    absolute;
+
+  top:
+    30px;
+
+  right:
+    6%;
+
+  font-size:
+    clamp(
+      3rem,
+      7vw,
+      5rem
+    );
+}
+
+
+/* ==============================
+   KILIMANJARO
+============================== */
+
+.kilimanjaro {
+  position:
+    absolute;
+
+  top:
+    20px;
+
+  right:
+    20%;
+
+  display:
+    flex;
+
+  flex-direction:
+    column;
+
+  align-items:
+    center;
+}
+
+.mountain {
+  font-size:
+    clamp(
+      8rem,
+      19vw,
+      16rem
+    );
+
+  opacity:
+    0.65;
+
+  line-height:
+    1;
+}
+
+.mountain-name {
+  margin-top:
+    -24px;
+
+  padding:
+    5px
+    12px;
+
+  border-radius:
+    999px;
+
+  background:
+    rgba(
+      255,
+      255,
+      255,
+      0.6
+    );
+
+  color:
+    #526238;
+
+  font-size:
+    0.75rem;
+
+  font-weight:
+    bold;
+}
+
+
+/* ==============================
+   CAMP
+============================== */
+
+.camp {
+  position:
+    absolute;
+
+  top:
+    31%;
+
+  right:
+    10%;
+
+  display:
+    flex;
+
+  gap:
+    5px;
+
+  align-items:
+    flex-end;
+
+  font-size:
+    clamp(
+      1.7rem,
+      4vw,
+      2.8rem
+    );
+}
+
+
+/* ==============================
+   GRASS ZONES
+============================== */
+
+.grass-zone {
+  position:
+    absolute;
+
+  left:
+    0;
+
+  right:
+    0;
+
+  height:
+    120px;
+}
+
+.grass-zone-top {
+  top:
+    calc(
+      50% - 155px
+    );
+}
+
+.grass-zone-bottom {
+  top:
+    calc(
+      50% + 45px
+    );
+}
+
+.grass {
+  position:
+    absolute;
+
+  left:
+    0;
+
+  right:
+    0;
+
+  bottom:
+    0;
+
+  overflow:
+    hidden;
+
+  white-space:
+    nowrap;
+
+  text-align:
+    center;
+
+  font-size:
+    clamp(
+      1.5rem,
+      3vw,
+      2.8rem
+    );
+
+  opacity:
+    0.78;
+}
+
+
+/* ==============================
+   ANIMALS
+============================== */
+
+.animal {
+  position:
+    absolute;
+
+  bottom:
+    16px;
+
+  z-index:
+    3;
+
+  line-height:
+    1;
+
+  filter:
+    drop-shadow(
+      0 6px 5px
+      rgba(
+        0,
+        0,
+        0,
+        0.16
+      )
+    );
+}
+
+.giraffe {
+  left:
+    48%;
+
+  font-size:
+    clamp(
+      4.5rem,
+      8vw,
+      7rem
+    );
+}
+
+.lion {
+  left:
+    68%;
+
+  font-size:
+    clamp(
+      3rem,
+      6vw,
+      5rem
+    );
+}
+
+.zebra-top {
+  right:
+    4%;
+
+  font-size:
+    clamp(
+      3.8rem,
+      7vw,
+      6rem
+    );
+}
+
+.elephant {
+  left:
+    50%;
+
+  font-size:
+    clamp(
+      4.5rem,
+      8vw,
+      7rem
+    );
+}
+
+.zebra-bottom {
+  right:
+    17%;
+
+  font-size:
+    clamp(
+      3.8rem,
+      7vw,
+      6rem
+    );
+}
+
+.rhino {
+  right:
+    3%;
+
+  font-size:
+    clamp(
+      3.5rem,
+      6vw,
+      5.5rem
+    );
+}
+
+
+/* ==============================
+   SAFARI ROAD
+============================== */
+
+.safari-road {
+  position:
+    absolute;
+
+  top:
+    50%;
+
+  left:
+    37%;
+
+  width:
+    70%;
+
+  height:
+    120px;
+
+  transform:
+    translateY(-50%)
+    rotate(-2deg);
+
+  overflow:
+    hidden;
+
+  background:
+    linear-gradient(
+      180deg,
+      #a16f3d,
+      #7c4c24 48%,
+      #6f421e 72%,
+      #89582d
+    );
+
+  border-top:
+    8px solid
+    #be8a50;
+
+  border-bottom:
+    8px solid
+    #60401e;
+
+  box-shadow:
+    0 12px 25px
+    rgba(
+      0,
+      0,
+      0,
+      0.16
+    );
+}
+
+
+/* ==============================
+   ROAD TRACKS
+============================== */
+
+.track {
+  position:
+    absolute;
+
+  left:
+    0;
+
+  right:
+    0;
+
+  height:
+    3px;
+
+  border-top:
+    3px dashed
+    rgba(
+      54,
+      31,
+      12,
+      0.42
+    );
+}
+
+.track-top {
+  top:
+    34px;
+}
+
+.track-bottom {
+  bottom:
+    26px;
+}
+
+
+/* ==============================
+   MUD
+============================== */
+
+.mud {
+  position:
+    absolute;
+
+  border-radius:
+    50%;
+
+  background:
+    rgba(
+      51,
+      29,
+      13,
+      0.27
+    );
+}
+
+.mud-1 {
+  width:
+    110px;
+
+  height:
+    24px;
+
+  left:
+    15%;
+
+  bottom:
+    13px;
+}
+
+.mud-2 {
+  width:
+    130px;
+
+  height:
+    29px;
+
+  left:
+    45%;
+
+  top:
+    14px;
+}
+
+.mud-3 {
+  width:
+    90px;
+
+  height:
+    22px;
+
+  right:
+    10%;
+
+  bottom:
+    15px;
+}
+
+
+/* ==============================
+   CARS
+============================== */
+
+.car {
+  position:
+    absolute;
+
+  top:
+    25px;
+
+  z-index:
+    4;
+
+  font-size:
+    clamp(
+      3rem,
+      6vw,
+      4.6rem
+    );
+
+  line-height:
+    1;
+}
+
+.car-one {
+  animation:
+    drive-right
+    17s
+    linear
+    infinite;
+}
+
+.car-two {
+  animation:
+    drive-left
+    22s
+    linear
+    infinite;
+
+  animation-delay:
+    4s;
+}
+
+
+/* ==============================
+   CAR ANIMATIONS
+============================== */
+
+@keyframes drive-right {
+  from {
+    transform:
+      translateX(-15vw)
+      scaleX(-1);
+  }
+
+  to {
+    transform:
+      translateX(80vw)
+      scaleX(-1);
+  }
+}
+
+@keyframes drive-left {
+  from {
+    transform:
+      translateX(80vw);
+  }
+
+  to {
+    transform:
+      translateX(-15vw);
+  }
+}
+
+
+/* ==============================
+   TABLET / MOBILE
+============================== */
+
+@media (max-width: 850px) {
+
+  body {
+    overflow:
+      auto;
+  }
+
+  .page-layout {
+    align-items:
+      flex-start;
+
+    justify-content:
+      center;
+
+    padding:
+      32px
+      16px
+      360px;
+  }
+
+  .card {
+    width:
+      min(
+        420px,
+        94vw
+      );
+
+    background:
+      rgba(
+        255,
+        253,
+        245,
+        0.84
+      );
+  }
+
+  h1 {
+    text-align:
+      center;
+  }
+
+  p {
+    text-align:
+      center;
+  }
+
+  .safari-road {
+    top:
+      auto;
+
+    bottom:
+      125px;
+
+    left:
+      -5%;
+
+    width:
+      110%;
+
+    height:
+      95px;
+
+    transform:
+      rotate(-1deg);
+  }
+
+  .grass-zone-top {
+    top:
+      auto;
+
+    bottom:
+      210px;
+  }
+
+  .grass-zone-bottom {
+    top:
+      auto;
+
+    bottom:
+      10px;
+  }
+
+  .giraffe {
+    left:
+      5%;
+  }
+
+  .lion {
+    left:
+      42%;
+  }
+
+  .zebra-top {
+    right:
+      5%;
+  }
+
+  .elephant {
+    left:
+      7%;
+  }
+
+  .zebra-bottom {
+    right:
+      26%;
+  }
+
+  .rhino {
+    right:
+      4%;
+  }
+
+  .kilimanjaro {
+    top:
+      auto;
+
+    bottom:
+      260px;
+
+    right:
+      50%;
+
+    transform:
+      translateX(50%);
+  }
+
+  .camp {
+    top:
+      auto;
+
+    bottom:
+      220px;
+
+    right:
+      6%;
+  }
+
+}
+
+
+/* ==============================
+   SMALL MOBILE
+============================== */
+
+@media (max-width: 500px) {
+
+  .page-layout {
+    padding:
+      18px
+      12px
+      330px;
+  }
+
+  .card {
+    padding:
+      22px
+      17px;
+  }
+
+  h1 {
+    font-size:
+      1.55rem;
+  }
+
+  p {
+    font-size:
+      0.9rem;
+  }
+
+  .item-text {
+    font-size:
+      0.72rem;
+  }
+
+}
+
+
+/* ==============================
+   REDUCED MOTION
+============================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .car {
+    animation:
+      none;
+  }
+
+  .car-one {
+    left:
+      20%;
+  }
+
+  .car-two {
+    right:
+      15%;
+  }
+
+}
