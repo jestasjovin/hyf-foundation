@@ -162,3 +162,68 @@ for(i=0, i <= recipientsArray.length; i ++ ;){
         sendEmailTo(recipientsArray[i])
 
 }
+
+
+
+
+
+function getCircleArea(radius) {
+  return Math.PI * radius ** 2;
+}
+
+function celsiusToFahrenheit(celsius) {
+  return (celsius * 9) / 5 + 32;
+}
+
+console.log(getCircleArea(5));       // 78.53981633974483
+console.log(celsiusToFahrenheit(20)); // 68
+
+
+
+
+let count = 0;
+
+function increase() {
+  count = count + 1;
+}
+
+function increaseLocal() {
+  let count = 100;
+  count = count + 1;
+}
+
+increase();
+increase();
+increaseLocal();
+
+console.log(count); // 2
+
+
+
+for (let i = 1; i <= 30; i++) {
+  if (i % 3 === 0) {
+    continue;
+  }
+
+  console.log(i);
+}
+
+
+
+
+ count = 0;
+
+function increase() {
+  count  ++ ;
+}
+
+function increaseLocal() {
+  count = 100;
+  count = count + 1;
+}
+
+increase();
+increase();
+increaseLocal();
+
+console.log(count); // 101
