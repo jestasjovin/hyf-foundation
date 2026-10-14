@@ -118,3 +118,29 @@ data types oand operations
 comparison and arithmentic operations
 % reminder ....
 string, number, bigInt, undefined, null , array, objects
+
+
+
+
+JS WEEK2
+Conditions
+
+
+ Warm up
+ 1. true
+ 2. false
+ 3. true
+ 4. true
+ 5. true
+ 6. false
+
+
+ if(CONDITION){
+ }else if (CONDITION){
+ }
+ else{
+ }
+
+
+
+ 
