@@ -7,8 +7,7 @@ function addActivity(date, activity, duration) {
 
 function showStatus() {
   if (activities.length === 0) {
-    console.log("Add some activities first");
-    return;
+    return "Add some activities first";
   }
 
   let totalMinutes = 0;
@@ -17,17 +16,17 @@ function showStatus() {
     totalMinutes += activities[i].duration;
   }
 
-  console.log(
-    `${activities.length} activities, ${totalMinutes} minutes of usage`,
-  );
+  let message = `${activities.length} activities, ${totalMinutes} minutes of usage`;
 
   if (totalMinutes > usageLimit) {
-    console.log("You have reached your limit!");
+    message += "\nYou have reached your limit!";
   }
+
+  return message;
 }
 
 function longestActivity() {
-  if (activities.length === 0) return;
+  if (activities.length === 0) return "No activities found";
 
   let longest = activities[0];
 
@@ -37,7 +36,7 @@ function longestActivity() {
     }
   }
 
-  console.log(`${longest.activity}: ${longest.duration} minutes`);
+  return `${longest.activity}: ${longest.duration} minutes`;
 }
 
 addActivity("21/10-26", "Youtube", 30);
