@@ -28,6 +28,7 @@ function logOutSeriesText() {
   const lifespanMinutes = lifespanYears * daysPerYear * minutesPerDay;
 
   let totalPercentage = 0;
+  let result = "";
 
   for (let i = 0; i < seriesDurations.length; i++) {
     const series = seriesDurations[i];
@@ -41,12 +42,12 @@ function logOutSeriesText() {
 
     totalPercentage += seriesPercentage;
 
-    console.log(
-      `${series.title} took ${seriesPercentage.toFixed(3)}% of my life`,
-    );
+    result += `${series.title} took ${seriesPercentage.toFixed(3)}% of my life\n`;
   }
 
-  console.log(`In total that is ${totalPercentage.toFixed(3)}% of my life`);
+  result += `In total that is ${totalPercentage.toFixed(3)}% of my life`;
+
+  return result;
 }
 
 logOutSeriesText();
