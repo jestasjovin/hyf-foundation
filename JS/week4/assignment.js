@@ -75,24 +75,22 @@ function getReply(command) {
     let operator = numbers[1];
     let secondNumber = Number(numbers[2]);
 
-    if (operator === "+") {
-      return firstNumber + secondNumber;
-    }
+    switch (operator) {
+      case "+":
+        return firstNumber + secondNumber;
 
-    if (operator === "-") {
-      return firstNumber - secondNumber;
-    }
+      case "-":
+        return firstNumber - secondNumber;
 
-    if (operator === "*") {
-      return firstNumber * secondNumber;
-    }
+      case "*":
+        return firstNumber * secondNumber;
 
-    if (operator === "/") {
-      if (secondNumber === 0) {
-        return "Cannot divide by zero";
-      }
+      case "/":
+        if (secondNumber === 0) {
+          return "Cannot divide by zero";
+        }
 
-      return firstNumber / secondNumber;
+        return firstNumber / secondNumber;
     }
   }
 
