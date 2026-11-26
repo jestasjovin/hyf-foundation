@@ -1,0 +1,55 @@
+
+body {
+    background-color: #000000;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding-top: 100px;
+}
+
+h1 {
+    color: #e6c56a;
+}
+
+input {
+    padding: 12px;
+    border-radius: 5px;
+    border: none;
+}
+
+button {
+    padding: 12px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #e6c56a;
+}
+
+button:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+#answer {
+    margin: 30px auto;
+    padding: 20px;
+    max-width: 350px;
+    border-radius: 8px;
+}
+
+.red {
+    background-color: #8b2929;
+}
+
+.yellow {
+    background-color: #a58a32;
+}
+
+.blue {
+    background-color: #294b78;
+}
+
+.green {
+    background-color: #28613d;
+}
