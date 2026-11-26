@@ -1,0 +1,47 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+main {
+  min-height: 100vh; 
+  display: flex;
+  flex-direction: column;  
+  justify-content: center;  
+  align-items: center;   
+  gap: 24px;
+}
+
+.input {
+  width: min(90%, 500px);
+  padding: 18px 24px;
+  font-size: 24px;
+  border: 3px solid #00ffff;
+  border-radius: 12px;
+  outline: none;
+}
+
+.input:focus {
+  box-shadow: 0 0 0 4px rgba(30, 102, 245, 0.25);
+}
+
+.theDiv {
+  width: 500px;
+  min-height: 350px;
+  padding: 24px;
+  display: flex;          
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 32px;
+  color: white;
+  background: #00ffff;     
+  border-radius: 16px;
+  transition: background-color 0.3s, transform 0.15s;
+}
